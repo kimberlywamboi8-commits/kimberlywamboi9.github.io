@@ -1,52 +1,167 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Site</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 700px;
-            margin: 50px auto;
-            padding: 0 20px;
-            line-height: 1.6;
-            color: #333;
-        }
-        h1 {
-            border-bottom: 2px solid #0366d6;
-            padding-bottom: 10px;
-        }
-        a {
-            color: #0366d6;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-    </style>
+    <meta
+        name="description"
+        content="Kimberly Wamboi portfolio website showcasing projects, skills, and contact details."
+    >
+    <title>Kimberly Wamboi | Live Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome! I'm kimberly</h1>
+    <div class="page-shell">
+        <header class="site-header">
+            <a class="brand" href="#top">Kimberly Wamboi</a>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
 
-    <div class="section">
-        <h2>About Me</h2>
-        <p>I'm a student currently learning computer programming
-           I'm interested in programming and web development.</p>
-    </div>
+        <main id="top">
+            <section class="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">Web Developer | Designer | Freelancer</p>
+                    <h1>A live portfolio website built to showcase the projects I have created.</h1>
+                    <p class="hero-text">
+                        This site highlights my front-end work, gives visitors direct access to
+                        project links, and presents my skills in a clear, professional layout.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">Explore Projects</a>
+                        <a class="button button-secondary" href="mailto:kimberlywamboi8@gmail.com">Email Me</a>
+                    </div>
+                </div>
 
-    <div class="section">
-        <h2>What I'm Learning</h2>
-        <ul>
-            <li>Git and GitHub</li>
-            <li>web development</li>
-        </ul>
-    </div>
+                <aside class="hero-preview" aria-label="Portfolio website preview">
+                    <div class="preview-window">
+                        <div class="preview-bar">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="preview-screen">
+                            <div class="preview-block preview-title"></div>
+                            <div class="preview-block preview-line short"></div>
+                            <div class="preview-grid">
+                                <div class="preview-card"></div>
+                                <div class="preview-card"></div>
+                                <div class="preview-card"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="preview-note">Project preview area. Replace with a real screenshot later if needed.</p>
+                </aside>
+            </section>
 
-    <div class="section">
-        <h2>Links</h2>
-        <ul>
-            <li><a href="https://github.com/kimberlywamboi8">My GitHub Profile</a></li>
-        </ul>
+            <section class="content-section" id="about">
+                <div class="section-heading">
+                    <p class="eyebrow">About</p>
+                    <h2>Who I am</h2>
+                </div>
+                <p class="section-text">
+                    I am a passionate developer focused on building responsive websites and
+                    interactive front-end experiences. I use HTML, CSS, and JavaScript to create
+                    layouts that are easy to use, visually clean, and ready to publish online.
+                </p>
+            </section>
+
+            <section class="content-section" id="projects">
+                <div class="section-heading">
+                    <p class="eyebrow">Projects</p>
+                    <h2>Featured work with direct links</h2>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project-card">
+                        <p class="project-tag">Live Portfolio</p>
+                        <h3>Portfolio Website</h3>
+                        <p>
+                            My personal portfolio showcasing my skills, project work, and
+                            contact details in a publish-ready format.
+                        </p>
+                        <div class="project-links">
+                            <a class="project-link" href="https://github.com/kimberlywamboi8/portfolio" target="_blank" rel="noreferrer">
+                                View GitHub Code
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <p class="project-tag">JavaScript Project</p>
+                        <h3>Car Maintenance Tracker 01</h3>
+                        <p>
+                            A project for tracking car maintenance tasks, records, and service activity.
+                        </p>
+                        <div class="project-links">
+                            <a class="project-link" href="https://github.com/kimberlywamboi8-commits/Car--Maintenance--Tracker--01" target="_blank" rel="noreferrer">
+                                View GitHub Code
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <p class="project-tag">JavaScript Project</p>
+                        <h3>Calculator</h3>
+                        <p>
+                            A calculator project built to practice JavaScript logic, user input handling,
+                            and interactive front-end behavior.
+                        </p>
+                        <div class="project-links">
+                            <a class="project-link" href="https://github.com/kimberlywamboi8-commits/calculator" target="_blank" rel="noreferrer">
+                                View GitHub Code
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-section" id="skills">
+                <div class="section-heading">
+                    <p class="eyebrow">Skills</p>
+                    <h2>What I use to build</h2>
+                </div>
+                <div class="skill-grid">
+                    <article class="info-card">
+                        <h3>HTML</h3>
+                        <p>Semantic page structure for clear and accessible content.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>CSS</h3>
+                        <p>Responsive styling, spacing, layout systems, and visual design.</p>
+                    </article>
+                    <article class="info-card">
+                        <h3>JavaScript</h3>
+                        <p>Interactive features, DOM updates, and client-side behavior.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="content-section" id="contact">
+                <div class="section-heading">
+                    <p class="eyebrow">Contact</p>
+                    <h2>Get in touch</h2>
+                </div>
+                <div class="contact-card">
+                    <p>Email: <a href="mailto:kimberlywamboi8@gmail.com">kimberlywamboi8@gmail.com</a></p>
+                    <p>GitHub: <a href="https://github.com/kimberlywamboi8" target="_blank" rel="noreferrer">github.com/kimberlywamboi8</a></p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Kimberly Wamboi. Live portfolio website.</p>
+        </footer>
     </div>
 </body>
 </html>
