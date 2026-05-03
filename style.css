@@ -27,6 +27,11 @@ body {
         linear-gradient(180deg, #f4eadf 0%, #f8f1e8 52%, #fcf8f4 100%);
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -134,10 +139,7 @@ a {
     border: 1px solid transparent;
     border-radius: 999px;
     font-weight: 600;
-    transition:
-        transform 0.2s ease,
-        background-color 0.2s ease,
-        border-color 0.2s ease;
+    transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .button:hover,
@@ -177,60 +179,12 @@ a {
     padding: 1.5rem;
 }
 
-.preview-window {
-    overflow: hidden;
-    border-radius: 20px;
-    border: 1px solid rgba(92, 67, 52, 0.16);
-    background: #fff8f1;
-}
-
-.preview-bar {
-    display: flex;
-    gap: 0.45rem;
-    padding: 0.9rem 1rem;
-    background: rgba(200, 92, 61, 0.08);
-    border-bottom: 1px solid rgba(92, 67, 52, 0.12);
-}
-
-.preview-bar span {
-    width: 0.75rem;
-    height: 0.75rem;
-    border-radius: 50%;
-    background: rgba(150, 59, 34, 0.3);
-}
-
-.preview-screen {
-    padding: 1.25rem;
-}
-
-.preview-block,
-.preview-card {
-    border-radius: 14px;
-    background: linear-gradient(135deg, rgba(200, 92, 61, 0.22), rgba(150, 59, 34, 0.08));
-}
-
-.preview-title {
-    height: 3.6rem;
-    margin-bottom: 1rem;
-}
-
-.preview-line {
-    height: 1rem;
-    margin-bottom: 1.2rem;
-}
-
-.preview-line.short {
-    width: 68%;
-}
-
-.preview-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 0.8rem;
-}
-
-.preview-card {
-    min-height: 6rem;
+.hero-image {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 1px solid rgba(92, 67, 52, 0.12);
 }
 
 .preview-note {
@@ -267,6 +221,16 @@ a {
     grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.project-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 16px;
+    border: 1px solid rgba(92, 67, 52, 0.12);
+}
+
 .project-tag {
     margin: 0 0 1rem;
     color: var(--accent-dark);
@@ -300,10 +264,7 @@ a {
     background: rgba(255, 255, 255, 0.55);
     color: var(--accent-dark);
     font-weight: 600;
-    transition:
-        transform 0.2s ease,
-        border-color 0.2s ease,
-        background-color 0.2s ease;
+    transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
 }
 
 .project-link:hover,
@@ -311,10 +272,6 @@ a {
     transform: translateY(-2px);
     border-color: rgba(150, 59, 34, 0.35);
     background: rgba(255, 255, 255, 0.9);
-}
-
-.secondary-link {
-    color: var(--muted);
 }
 
 .contact-card a {
@@ -330,8 +287,7 @@ a {
 @media (max-width: 900px) {
     .hero,
     .project-grid,
-    .skill-grid,
-    .preview-grid {
+    .skill-grid {
         grid-template-columns: 1fr;
     }
 
